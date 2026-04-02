@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
 import heroIllustration from "@/assets/hero-illustration.png";
-import { Gamepad2, Play } from "lucide-react";
+import { Compass, Play } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -37,10 +37,26 @@ const HeroSection = () => {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.15 }}
-              className="text-5xl md:text-7xl lg:text-8xl font-display font-black text-gradient-gold mb-5 tracking-tight leading-[0.95]"
+              className="text-5xl md:text-7xl lg:text-8xl font-display font-black text-gradient-gold mb-4 tracking-tight leading-[0.95]"
             >
               PRASASTI
             </motion.h1>
+
+            {/* Illustration between title and tagline */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="flex justify-center lg:justify-start mb-4"
+            >
+              <img
+                src={heroIllustration}
+                alt="Karakter eksplorasi budaya PRASASTI"
+                width={180}
+                height={180}
+                className="w-32 md:w-40 h-auto drop-shadow-xl"
+              />
+            </motion.div>
 
             <motion.p
               initial={{ opacity: 0, x: -30 }}
@@ -57,7 +73,7 @@ const HeroSection = () => {
               transition={{ duration: 0.7, delay: 0.4 }}
               className="text-muted-foreground text-sm max-w-sm mx-auto lg:mx-0 mb-10 font-body"
             >
-              Game gamifikasi eksplorasi museum berbasis mobile yang menghadirkan pengalaman belajar budaya secara interaktif, santai, dan tanpa batas ruang.
+              Game eksplorasi museum berbasis mobile yang menghadirkan pengalaman belajar budaya secara interaktif, santai, dan tanpa batas ruang.
             </motion.p>
 
             <motion.div
@@ -67,7 +83,7 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <button className="bg-gradient-gold text-primary-foreground font-body font-bold px-8 py-4 rounded-lg text-base flex items-center justify-center gap-3 hover:scale-105 transition-transform duration-300 glow-gold">
-                <Gamepad2 className="w-5 h-5" />
+                <Compass className="w-5 h-5" />
                 Mulai Jelajah
               </button>
               <button className="border border-primary/30 text-primary font-body font-semibold px-8 py-4 rounded-lg text-base flex items-center justify-center gap-3 hover:bg-primary/10 transition-all duration-300">
@@ -84,7 +100,7 @@ const HeroSection = () => {
             transition={{ duration: 0.9, delay: 0.3 }}
             className="w-full lg:w-[55%] flex items-center justify-center relative"
           >
-            {/* Glow effect behind illustration */}
+            {/* Glow effect */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div className="w-[70%] h-[70%] rounded-full bg-primary/10 blur-[80px]" />
             </div>
