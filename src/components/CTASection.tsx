@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Gamepad2, Handshake } from "lucide-react";
+import { Compass, Handshake } from "lucide-react";
 
 const CTASection = () => (
   <motion.section
