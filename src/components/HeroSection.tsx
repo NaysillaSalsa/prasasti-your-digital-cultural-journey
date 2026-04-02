@@ -14,52 +14,44 @@ const HeroSection = () => {
           height={1080}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <p className="text-gold-light text-sm md:text-base tracking-[0.3em] uppercase mb-4 font-body font-medium">
-            Platform Ragam Artefak, Seni, Adat & Sejarah Tradisi Indonesia
-          </p>
-        </motion.div>
-
+      <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-6xl md:text-8xl lg:text-9xl font-display font-black text-gradient-gold mb-6 tracking-tight"
+          transition={{ duration: 0.7 }}
+          className="text-7xl md:text-8xl lg:text-9xl font-display font-black text-gradient-gold mb-8 tracking-tight leading-none"
         >
           PRASASTI
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-foreground/80 text-lg md:text-xl max-w-2xl mx-auto mb-4 font-body leading-relaxed"
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="text-foreground/90 text-lg md:text-2xl max-w-2xl mx-auto mb-5 font-body leading-relaxed"
         >
-          Jelajahi museum Indonesia, temukan makna tersembunyi, dan hidupkan kembali budaya dalam dunia digital.
+          Jelajahi museum Indonesia dan temukan{" "}
+          <span className="text-gradient-gold font-semibold">makna tersembunyi</span>{" "}
+          budaya.
         </motion.p>
 
         <motion.p
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-muted-foreground text-sm md:text-base max-w-xl mx-auto mb-10 font-body"
+          transition={{ duration: 0.7, delay: 0.35 }}
+          className="text-muted-foreground text-sm md:text-base max-w-xl mx-auto mb-12 font-body leading-relaxed"
         >
-          Game gamifikasi eksplorasi museum berbasis mobile yang menghadirkan pengalaman belajar budaya secara interaktif, santai, dan tanpa batas ruang.
+          Game eksplorasi museum berbasis mobile yang menghadirkan pengalaman belajar budaya secara interaktif, santai, dan tanpa batas ruang.
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          transition={{ duration: 0.7, delay: 0.5 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <button className="bg-gradient-gold text-primary-foreground font-body font-bold px-8 py-4 rounded-lg text-lg flex items-center justify-center gap-3 hover:scale-105 transition-transform duration-300 glow-gold">
