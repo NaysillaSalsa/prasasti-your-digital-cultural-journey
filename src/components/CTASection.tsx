@@ -18,7 +18,7 @@ const CTASection = () => (
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <button className="bg-gradient-gold text-primary-foreground font-body font-bold px-8 py-4 rounded-lg text-lg flex items-center justify-center gap-3 hover:scale-105 transition-transform duration-300 glow-gold">
-          <Gamepad2 className="w-5 h-5" />
+          <Compass className="w-5 h-5" />
           Mulai Sekarang
         </button>
         <button className="border border-gold/30 text-gold font-body font-semibold px-8 py-4 rounded-lg text-lg flex items-center justify-center gap-3 hover:bg-gold/10 transition-all duration-300">
